@@ -1,9 +1,9 @@
 const getTotalBalanceByGender = (users, gender) =>
     users
-      .filter(user => user.gender === gender) 
+      .filter(user => user.gender === gender)
       .reduce((total, user) => total + user.balance, 0); 
   
-  
+ 
   const allUsers = [
     {
       name: "Moore Hensley",
@@ -42,5 +42,6 @@ const getTotalBalanceByGender = (users, gender) =>
     }
   ];
   
-  console.log(getTotalBalanceByGender(allUsers, "male")); 
-  console.log(getTotalBalanceByGender(allUsers, "female")); 
+  // Wywołanie funkcji i wypisanie wyników
+  console.log(getTotalBalanceByGender(allUsers, "male"));   // 12053
+  console.log(getTotalBalanceByGender(allUsers, "female")); // 8863
