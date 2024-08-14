@@ -42,6 +42,6 @@ const getTotalBalanceByGender = (users, gender) =>
     }
   ];
   
-  // Wywołanie funkcji i wypisanie wyników
-  console.log(getTotalBalanceByGender(allUsers, "male"));   // 12053
-  console.log(getTotalBalanceByGender(allUsers, "female")); // 8863
+  
+  console.log(getTotalBalanceByGender(allUsers, "male"));   
+  console.log(getTotalBalanceByGender(allUsers, "female")); 
